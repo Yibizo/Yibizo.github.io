@@ -1,0 +1,20 @@
+.imageIcon{
+    height: 10vw;
+    margin: 3%;
+    padding: 2%;
+    background-color: rgba(209, 209, 209, 0.603);
+    border-radius: 25%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.imageIcon:hover{
+    transform: scale(1.2);
+    background-color: rgb(209, 209, 209);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+main{
+    text-align: center;
+}
