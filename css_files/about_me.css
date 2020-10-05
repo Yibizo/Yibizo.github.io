@@ -1,18 +1,10 @@
 #portrait{
-    height: 28vw;
-    width: 28vw;
+    height: 20vw;
+    width: 20vw;
     border: solid white 0.5vw;
     border-radius: 5%;
 }
 text{
    line-height: 3vw;
-}
-.row{
-    display: flex;
-}
-.column1{
-    flex: 25%;
-}
-.column2{
-    flex: 75%;
+   text-align: justify;
 }

@@ -1,0 +1,24 @@
+#imageList{
+    padding: 0% 1%;
+    text-align: center;
+}
+.imageIcon{
+    position: relative;
+    height: 15vw;
+    width: 15vw;
+    padding: 5%;
+    opacity: 0.8;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.imageIcon:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5%;
+    padding: -5%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
