@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="../css_files/all.css"/>
+        <link rel="stylesheet" href="../css_files/contact.css"/>
+    </head>
+    <body>
+        <nav>
+            <div id="menu"></div>
+        </nav>
+        <header>
+            <div id="imageHead"></div>
+        </header>
+        <main>
+            <div id="title">&nbsp;CONTACT&nbsp;</div>
+            <form action="mailto:diegomejiasuarez@gmail.com" method="POST" enctype="text/plain" id="formProp">
+                NAME<br><br>
+                <input type="text" name="name" placeholder="" maxlength="30" size="30" class="lineProp"/>
+                <br><br><br>
+                E - MAIL<span class="asterisk"> *</span><br><br>
+                <input type="email" name="mail" placeholder="someone@example.com" size="40" class="lineProp" required/>
+                <br><br><br>
+                MESSAGE<span class="asterisk"> *</span><br><br>
+                <textarea rows="10" cols="100" name="message" id="message" placeholder="Write your message here ..." required/></textarea>
+                <br><br><br>
+                <input type="submit" value="send" class="buttonsProp"/>
+                <input type="reset" value="reset" class="buttonsProp"/>
+            </form>
+        </main>
+        <footer>
+            Diego Mejía Suárez | 2020
+        </footer>
+
+        <script defer src="../javascript_files/all.js"></script>
+    </body>
+</html>
