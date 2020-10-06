@@ -70,11 +70,11 @@ main{
 }
 @keyframes glow {
     from {
-        text-shadow: 0 0 .73vw #fff, 0 0 1.46vw #fff, 0 0 2.19vw #1e0788, 0 0 2.92vw #1e0788, 0 0 3.65vw #1e0788, 0 0 4.38vw #1e0788, 0 0 5.11vw #1e0788;
+        text-shadow: 0 0 .73vw rgb(201, 201, 201), 0 0 1.46vw rgb(201, 201, 201), 0 0 2.19vw #1e0788, 0 0 2.92vw #1e0788, 0 0 3.65vw #1e0788, 0 0 4.38vw #1e0788, 0 0 5.11vw #1e0788;
     }
 
     to {
-        text-shadow: 0 0 1.46vw #fff, 0 0 2.19vw #2408a0, 0 0 2.92vw #2408a0, 0 0 3.65vw #2408a0, 0 0 4.38vw #2408a0, 0 0 5.11vw #2408a0, 0 0 5.84vw #2408a0;
+        text-shadow: 0 0 1.46vw rgb(201, 201, 201), 0 0 2.19vw #2408a0, 0 0 2.92vw #2408a0, 0 0 3.65vw #2408a0, 0 0 4.38vw #2408a0, 0 0 5.11vw #2408a0, 0 0 5.84vw #2408a0;
     }
 }
 body#about_me a#aboutmenu,
