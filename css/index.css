@@ -1,0 +1,274 @@
+/*all*/
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    cursor: default;
+    z-index: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+/*scrollbar custom settings*/
+::-webkit-scrollbar{
+    width: 1.1vw;
+}
+::-webkit-scrollbar-track{
+    background: rgb(75, 75, 75);
+    box-shadow: inset 0 0 .3vw rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(41, 41, 41);
+    box-shadow: inset 0 0 .15vw rgb(63, 63, 63);
+    box-shadow: inset 0 0 .5vw rgb(0, 0, 0);
+}
+
+/*nav bar*/
+#menuSymbol{
+    transition: all 1s;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.900);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    box-shadow: inset 0 0 .3vw rgb(0, 0, 0);
+    font-size: 4vw;
+    padding: 0 13vw;
+    transition: all 1s;
+    z-index: 10;
+    right: 100%;
+}
+span{
+    background-color: transparent;
+}
+span a{
+    text-decoration: none;
+    background-color: transparent;
+    transition: all .5s;
+}
+span a:hover{
+    cursor: pointer;
+    color: rgb(0, 47, 255);
+    transition: all .5s;
+}
+symbol{
+    position: fixed;
+    font-size: 3vw;
+    padding: 1vh 1vw;
+    background-color: transparent;
+    z-index: 11;
+    transition: all .5s;
+}
+symbol:hover{
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: all .5s;
+}
+
+/*general section formatting*/
+section{
+    padding: 0 0 10vh;
+    font-size: 1.5vw;
+}
+
+/*general section formatting*/
+.title{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 3vh 0;
+    margin-bottom: 8vh;
+    font-size: 5vw;
+    font-weight: bold;
+    border-top: .05em solid rgb(14, 14, 14);
+    border-bottom: .05em solid rgb(14, 14, 14);
+}
+.content{
+    padding: 0 5vw;
+}
+
+/*flex container*/
+.flex{
+    display: flex;
+}
+
+/*main gif*/
+#mainImage{
+    position: relative;
+    padding: 0;
+    height: 100vh;
+}
+#mainImage img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#mainText{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vh 0;
+    background-color: rgba(0, 0, 0, 0.700);
+    border-top: .05em solid rgba(5, 5, 5, 0.7);
+    border-bottom: .05em solid rgba(5, 5, 5, 0.700);
+}
+
+/*about me section*/
+#aboutMe .flex{
+    align-items: center;
+    position: relative;
+}
+#flexLess{
+    flex: 25%;
+    width: 16vw;
+    border-radius: .5vw;
+    margin-right: 1vw;
+    border: .3em solid black;
+}
+#flexMore{
+    flex: 75%;
+    margin-left: 1vw;
+}
+#aboutMe .content div{
+    padding: 2vh 0;
+    line-height: 6vh;
+    text-align: justify;
+}
+
+/*skills section*/
+.subtitle{
+    position: relative;
+    font-size: 2.7vw; 
+    overflow: hidden;
+    text-align: center;
+    margin: 5vh 0;
+}
+.subtitle::before,.subtitle::after{
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 50%;
+    height: 0.5vh;
+    content: '\a0';
+    background-color: rgb(168, 168, 168);
+}
+.subtitle::before {
+    margin-left: -50%;
+    text-align: right;
+}
+#skills .flex{
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.language{
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+.language:hover{
+    transform: scale(1.05);
+    transition: all .5s;
+}
+.language div, .language img{
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    padding: 2vh .5vw;
+    font-size: 1.5vw;
+    border: .1em solid black;
+}
+.language div{
+    border-bottom-right-radius: .5vw;
+    border-bottom-left-radius: .5vw;
+    border-top: 0 solid transparent;
+}
+.language img{
+    border-top-right-radius: .5vw;
+    border-top-left-radius: .5vw;
+}
+#skills .content img{
+    object-fit: contain;
+    width: 10vw;
+    height: 10vw;
+}
+
+/*projects section*/
+#projects .content{
+    justify-content: space-around;
+}
+#projects .content .language img{
+    object-fit: contain;
+    width: 20vw;
+    height: 20vw;
+}
+#projects .content .language div{
+    font-size: 1vw;
+    border-top: 0 solid black;
+}
+/*
+#projects .content{
+    position: relative;
+    text-align: center;
+    height: 60vh;
+}
+#projects .content img, #projects #buttons{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 15vw;
+}
+#projects .content img{
+    opacity: 0;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+#projects #buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -34vh;
+    background-color: transparent;
+    font-size: 3vw;
+}
+*/
+
+/*contact section*/
+#contact .content{
+    display: flex;
+    justify-content: center;
+}
+#contact .content div{
+    background-color: black;
+    padding: 2vh 1vw;
+    font-size: 2.5vw;
+    border-radius: .5vw;
+    border: .05em solid rgb(14, 14, 14);
+    transition: all .5s;
+}
+#contact .content div:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+#contact .content div a{
+    text-decoration: none;
+    background-color: transparent;
+}
+#contact .content div a:hover{
+    cursor: pointer;
+}

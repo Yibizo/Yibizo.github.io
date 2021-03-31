@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diego Mejia Suarez - Website</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/laptop.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <symbol id="menuSymbolTwo" onclick="showNav()" style="opacity: 0;">&#10005;</symbol>
+        <symbol id="menuSymbolOne" onclick="showNav()">&#9776;</symbol>
+        <nav id="menu" style="opacity: 0;">
+            <span id="linkAbout" onclick="showNav()" style="pointer-events: none;"><a href="#aboutMe">About Me</a></span>
+            <span id="linkSkills" onclick="showNav()" style="pointer-events: none;"><a href="#skills">Skills</a></span>
+            <span id="linkProjects" onclick="showNav()" style="pointer-events: none;"><a href="#projects">Projects</a></span>
+            <span id="linkContact" onclick="showNav()" style="pointer-events: none;"><a href="#contact">Contact</a></span>
+        </nav>
+
+        <section id="mainImage">
+            <img src="../images/katana_zero_roof.gif">
+            <div id="mainText" class="glow">Diego Mejía Suárez</div>
+        </section>
+
+        <section id="aboutMe">
+            <div class="title">About Me</div>
+            <div class="content">
+                <div class="flex" data-aos="fade-right" data-aos-duration="1200">
+                    <div><img id="flexLess" src="../images/profile.jpg"></div>
+                    <div id="flexMore">
+                        My name is Diego Mejía Suárez, and I'm currently a computer science undergraduate looking forward to graduate in Computer Science. I was born in Mexico and am currently studying in Tecnológico de Monterrey CSF in Mexico City. My current hobbies are software development, deep understanding of technologies, playing videogames and basketball. Not only that, but I also find the topic of Artficial Intelligence (A.I.) quite interesting and I hope that one day I'm able to develop something regarding that subject.
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1200">
+                    I would consider myself as an individual that is able to work well with other people. Despite the fact that by nature I'm an introvert, I value teamwork and love hearing other people's perspective. Furthermore, I believe that my most valuable skills are my determination to get things done, no matter how hard they may get, as well as my hearing abilites which have helped me throughout the years to understand different people's perspective.
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1200">
+                    Apart from everything that has been mentioned, I like to get to solutions that are efficient when it comes to coding. Having learnt order of complexities I now comprehend that what's important is not how short the code is, but rather how complex it is and how much time it would theoritically take to execute in its best, average and worst scenario.
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="title">Skills</div>
+            <div class="content">
+
+                <div class="subtitle">&nbsp Algorithmic Languages &nbsp</div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="language">
+                        <img src="../images/logos/python_logo.png">
+                        <div>Python</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/c_plus_plus_logo.png">
+                        <div>C/C++</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/c_sharp_logo.png">
+                        <div>C#</div>
+                    </div>
+                </div>
+
+                <div class="subtitle">&nbsp Frontend Languages &nbsp</div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="language">
+                        <img src="../images/logos/html_logo.png">
+                        <div>HTML</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/css_logo.png">
+                        <div>CSS</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/javascript_logo.png">
+                        <div>Javascript</div>
+                    </div>
+                </div>
+
+                <div class="subtitle">&nbsp Database Languages &nbsp</div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="language">
+                        <img src="../images/logos/mysql_logo.png">
+                        <div>MySQL</div>
+                    </div>
+                </div>
+
+                <div class="subtitle">&nbsp Development Tools &nbsp</div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="language">
+                        <img src="../images/logos/git_logo.png">
+                        <div>Git</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/markdown_logo.png">
+                        <div>Markdown</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/latex_logo.png">
+                        <div>Latex</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/vs_code_logo.png">
+                        <div>VS Code</div>
+                    </div>
+                </div>
+
+                <div class="subtitle">&nbsp General Tools &nbsp</div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="language">
+                        <img src="../images/logos/photoshop_logo.png">
+                        <div>Photoshop</div>
+                    </div>
+                    <div class="language">
+                        <img src="../images/logos/office_logo.png">
+                        <div>Office</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="title">Projects</div>
+            <div style="text-align: center; padding-bottom: 5vh;">W.I.P.</div>
+            <div class="content flex">
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <a href="https://github.com/Yibizo/yibizo.github.io" target="blank">
+                        <div class="language">
+                            <img src="../images/projects/website_ss.PNG">
+                            <div>Website hosted through Github</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <a href="https://github.com/Yibizo/Y1-B0-Discord-Bot" target="blank">
+                        <div class="language">
+                            <img src="../images/projects/discord_bot_ss.PNG">
+                            <div>Discord Bot with several commands.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
+                    <a href="https://github.com/Yibizo/Desktop-Assistant" target="blank">
+                        <div class="language">
+                            <img src="../images/projects/desktop_assitant_ss.PNG">
+                            <div>Desktop Assitant with voice recognition</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="title">Contact</div>
+            <div class="content" data-aos="zoom-in" data-aos-duration="1200">
+                <div><a href="mailto:diegomejiasuarez@gmail.com">Send me an e-mail</a></div>
+            </div>
+        </section>
+
+        <script src="../js/index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
