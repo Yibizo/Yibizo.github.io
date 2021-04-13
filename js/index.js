@@ -1,3 +1,5 @@
+AOS.init();
+
 const about = document.getElementById('linkAbout');
 const skills = document.getElementById('linkSkills');
 const projects = document.getElementById('linkProjects');
