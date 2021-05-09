@@ -22,12 +22,13 @@ body{
     width: 2vw;
 }
 ::-webkit-scrollbar-track{
-    background: none;
+    background: transparent;
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(80, 80, 80, 0.4);
     border: .6vw solid rgba(0, 0, 0, 0);
     border-radius: 1vw;
+    -webkit-border-radius: 1vw;
     background-clip: padding-box;
 }
 
@@ -214,43 +215,120 @@ section{
 
 /*projects section*/
 #projects .content{
-    justify-content: space-around;
-}
-#projects .content .language img{
-    object-fit: contain;
-    width: 20vw;
-    height: 20vw;
-}
-#projects .content .language div{
-    font-size: 1vw;
-    border-top: 0 solid black;
-}
-/*
-#projects .content{
     position: relative;
-    text-align: center;
-    height: 60vh;
 }
-#projects .content img, #projects #buttons{
+#projects #left, #projects #right{
     position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 0 15vw;
-}
-#projects .content img{
-    opacity: 0;
-    height: 60vh;
-    object-fit: cover;
-    border-radius: 1vw;
-}
-#projects #buttons{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -34vh;
-    background-color: transparent;
+    font-size: 2vw;
+    top: 45%;
     font-size: 3vw;
+    transition: all .5s;
 }
-*/
+#projects #right{
+    right: 6%;
+}
+#projects #left{
+    left: 6%;
+}
+#projects #left:hover, #projects #right:hover{
+    transform: scale(1.5);
+    transition: all .5s;
+    cursor: pointer;
+    color: rgb(168, 168, 168);
+}
+#slideshow{
+    position: relative;
+    width: 90%;
+    height: 65vh;
+    margin: 0 auto;
+}
+.slide{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15% 75% 10%;
+    padding: .2em;
+    grid-template-areas:
+    "name image"
+    "description image"
+    "link image";
+}
+.slide div{
+    border: .2vw solid black;
+    background-color: rgb(14, 14, 14);
+}
+.slide .name{
+    grid-area: name;
+    border-right: .1vw solid black;
+    border-bottom: .1vw solid black;
+    border-top-left-radius: .3em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide .description{
+    grid-area: description;
+    border-top: .1vw solid black;
+    border-right: .1vw solid black;
+    border-bottom: .1vw solid black;
+    padding: 2% 5%;
+    text-align: justify;
+    line-height: 1.3em;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide .links{
+    grid-area: link;
+    border-top: .1vw solid black;
+    border-right: .1vw solid black;
+    border-bottom-left-radius: .3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1vw;
+}
+.slide .image{
+    grid-area: image;
+    border-left: .1vw solid black;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide .links div{
+    background-color: rgb(14, 14, 14);
+    border: none;
+}
+.slide .links img{
+    width: 1.7vw;
+    height: 1.7vw;
+    object-fit: contain;
+    transition: all .5s;
+}
+.slide .image img{
+    object-fit: scale-down;
+    max-height: 90%;
+    max-width: 90%;
+    border: .3vw solid rgb(26, 26, 26);
+}
+.slide .links img, .slide .image img{
+    text-decoration: none;
+    background-color: rgb(14, 14, 14);
+}
+.slide .links img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s;
+}
 
 /*contact section*/
 #contact .content{

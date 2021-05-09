@@ -35,3 +35,36 @@ function showNav() {
         arrClick[i].style.pointerEvents = eventStat;
     }
 }
+
+const slidesContainer = document.getElementById('slideshow');
+const lenDivList = slidesContainer.getElementsByClassName('slide').length;
+let index = 1;
+
+function slideButton(isNext){
+    let prev;
+    if (isNext) {
+        index++;
+        if (index > lenDivList) {
+            index = 1;
+            prev = lenDivList;
+        }
+        else
+            prev = index-1;
+    }
+    else {
+        index--;
+        if (index < 1) {
+            index = lenDivList;
+            prev = 1;
+        }
+        else
+            prev = index+1;
+    }
+
+    let tempPrev = document.querySelector(`#slideshow .slide:nth-child(${prev})`);
+    let tempIdx = document.querySelector(`#slideshow .slide:nth-child(${index})`);
+    tempPrev.style.opacity = '0';
+    tempIdx.style.opacity = '1';
+    tempPrev.style.zIndex = '-1';
+    tempIdx.style.zIndex = '1';
+}

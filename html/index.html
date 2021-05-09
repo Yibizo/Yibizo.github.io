@@ -122,31 +122,50 @@
 
         <section id="projects">
             <div class="title">Projects</div>
-            <div style="text-align: center; padding-bottom: 5vh;">W.I.P.</div>
-            <div class="content flex">
-                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
-                    <a href="https://github.com/Yibizo/yibizo.github.io" target="blank">
-                        <div class="language">
-                            <img src="../images/projects/website_ss.PNG">
-                            <div>Website hosted through Github</div>
+            <div class="content">
+                <div id="left" onclick="slideButton(false)" data-aos="fade-up" data-aos-duration="1200"><</div>
+                <div id="right" onclick="slideButton(true)" data-aos="fade-up" data-aos-duration="1200">></div>
+                <div id="slideshow" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="slide" style="opacity: 1; z-index: 1;">
+                        <div class="name">Into The Mainframe</div>
+                        <div class="description">
+                            Alongside other 3 members, created a videogame that tracked some player stats later to be used by 'Movimiento STEAM', the group which asked us to deliver this product. The project involved C# scripting, api connections and website display. I was involved with the videogame creation, website frontend and hosting of the game.
                         </div>
-                    </a>
-                </div>
-                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
-                    <a href="https://github.com/Yibizo/Y1-B0-Discord-Bot" target="blank">
-                        <div class="language">
-                            <img src="../images/projects/discord_bot_ss.PNG">
-                            <div>Discord Bot with several commands.</div>
+                        <div class="links">
+                            <div onclick="window.open('https://github.com/Yibizo/reto-movimiento-steam-eq-6')"><img src="../images/logos/github_logo.png"></div>
                         </div>
-                    </a>
-                </div>
-                <div class="flex" data-aos="fade-up" data-aos-duration="1200">
-                    <a href="https://github.com/Yibizo/Desktop-Assistant" target="blank">
-                        <div class="language">
-                            <img src="../images/projects/desktop_assitant_ss.PNG">
-                            <div>Desktop Assitant with voice recognition</div>
+                        <div class="image"><img src="../images/projects/mainframe_ss.PNG"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="name">Desktop Assitant</div>
+                        <div class="description">
+                            Developed a Python Desktop Assistant that utilizes Google’s voice modules for it various commands. Amongst the actions that it can perform are Google search, YouTube search, open programs and tell the date/time. Apart from this, it plays text-to-speech audio corresponding to the given command, and uses multiprocessing so that said audio doesn’t delay the script.
                         </div>
-                    </a>
+                        <div class="links">
+                            <div onclick="window.open('https://github.com/Yibizo/Desktop-Assistant')"><img src="../images/logos/github_logo.png"></div>
+                        </div>
+                        <div class="image"><img src="../images/projects/desktop_assistant_ss.PNG"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="name">Discord Bot</div>
+                        <div class="description">
+                            Coded a bot used for Discord servers from scratch based only on the discord.py documentation. All of its functionalities are listed on when asked for help in a server. However, here are a few things it is able to do; save notes from users of the server, play hangman, join a voice channel and play a selected song/s, among many others.
+                        </div>
+                        <div class="links">
+                            <div onclick="window.open('https://github.com/Yibizo/Y1-B0-Discord-Bot')"><img src="../images/logos/github_logo.png"></div>
+                        </div>
+                        <div class="image"><img src="../images/projects/discord_bot_ss.PNG"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="name">Personal Website</div>
+                        <div class="description">
+                            Designed a personal website from scratch hosted within Github Pages. Using HTML, CSS and Javascript, I learnt the complexities of web design, and what it takes to host one. As well as what involves to be constantly updating said website with new features.
+                        </div>
+                        <div class="links">
+                            <div onclick="window.open('https://github.com/Yibizo/yibizo.github.io')"><img src="../images/logos/github_logo.png"></div>
+                        </div>
+                        <div class="image"><img src="../images/projects/website_ss.PNG"></div>
+                    </div>
                 </div>
             </div>
         </section>
