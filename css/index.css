@@ -9,7 +9,6 @@
     cursor: default;
     z-index: 0;
     scroll-behavior: smooth;
-    user-select: none;
 }
 
 /*body*/
@@ -85,8 +84,6 @@ section{
     padding: 0 0 10vh;
     font-size: 1.5vw;
 }
-
-/*general section formatting*/
 .title{
     width: 100%;
     background-color: black;
@@ -130,7 +127,7 @@ section{
     transform: translate(-50%, -50%);
     padding: 2vh 0;
     background-color: rgba(0, 0, 0, 0.700);
-    border-top: .05em solid rgba(5, 5, 5, 0.7);
+    border-top: .05em solid rgba(5, 5, 5, 0.700);
     border-bottom: .05em solid rgba(5, 5, 5, 0.700);
 }
 
@@ -197,6 +194,7 @@ section{
     padding: 2vh .5vw;
     font-size: 1.5vw;
     border: .1em solid black;
+    box-shadow: inset 0 0 .55vw rgba(0, 0, 0, 0.767);
 }
 .language div{
     border-bottom-right-radius: .5vw;
@@ -259,6 +257,7 @@ section{
 .slide div{
     border: .2vw solid black;
     background-color: rgb(14, 14, 14);
+    box-shadow: inset 0 0 .28vw rgba(0, 0, 0, 0.767);
 }
 .slide .name{
     grid-area: name;
@@ -332,16 +331,18 @@ section{
 
 /*contact section*/
 #contact .content{
+    padding-top: 4vh;
     display: flex;
     justify-content: center;
 }
 #contact .content div{
-    background-color: black;
+    background-color: rgb(14, 14, 14);
     padding: 2vh 1vw;
     font-size: 2.5vw;
     border-radius: .5vw;
-    border: .05em solid rgb(14, 14, 14);
+    border: .08em solid rgb(0, 0, 0);
     transition: all .5s;
+    box-shadow: inset 0 0 .44vw rgba(0, 0, 0, 0.767);
 }
 #contact .content div:hover{
     cursor: pointer;
